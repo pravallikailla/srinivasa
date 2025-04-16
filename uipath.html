@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>UiPath - Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Charm:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Adlam:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    .section {
+      background: #fff;
+      margin-bottom: 30px;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .section h3 {
+      color: #e65100;
+      margin-bottom: 10px;
+    }
+
+    .info-list, .perks-list {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .perks-list li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      color: #d84315;
+      font-weight: bold;
+    }
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  width: 100%; /* Ensure it takes full width */
+  color: darkblue;
+  height: 19vh;
+  display: flex;
+  align-items: center;
+  background-color: rgba(174, 196, 229, 0.763);
+  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); */
+}
+
+.reight {
+  display: flex;
+  gap: 90px;
+  font-size: 28px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  right: 0;
+  border-bottom: 2px dotted;
+  margin-right: 15px;
+}
+li{
+    
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+
+}
+.details-box{
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+ 
+}.about{
+    display: flex;
+   align-items: center;
+}
+h2{
+    color: #0a1a54;
+}
+
+  </style>
+</head>
+<body>
+    <main class="main-content">
+    <nav >
+        <div class="log"><img src="Srinit_Updated_logo_brown-1 (1).png" onclick="closeadmin()" alt=""></div>
+        <div class="reight">
+            <div>Home</div>
+            <div>About</div>
+            
+        </div>
+    </nav>
+
+  
+    <div class="details-box">
+        <div class="about">
+      <h2>ABOUT 
+      </h2>
+      <img src="cm4.webp"  style="width: 200px;height: 100px;"></div>
+      
+      <div class="section">
+        <h3>UiPath Overview</h3>
+        <p>
+          <span class="highlight">UiPath</span> is a global leader in <strong>Robotic Process Automation (RPA)</strong>. With offices in over 25 countries, UiPath helps organizations automate repetitive digital tasks, enabling faster operations and greater accuracy.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Technologies Used</h3>
+        <ul class="info-list">
+          <li>UiPath Studio & Orchestrator</li>
+          <li>C#, .NET, VB.NET</li>
+          <li>Python for scripting</li>
+          <li>API integration</li>
+          <li>Cloud services (Azure, AWS)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Hiring Details</h3>
+        <ul class="info-list">
+          <li><strong>Roles:</strong> RPA Developer, Automation Engineer, Support Engineer</li>
+          <li><strong>Eligibility:</strong> Minimum 60%, strong logical & programming skills</li>
+          <li><strong>Preferred Skills:</strong> .NET/Java, problem-solving, RPA certification (optional)</li>
+          <li><strong>Locations:</strong> Bangalore, Chennai, Remote options available</li>
+          <li><strong>CTC Offered:</strong> ₹5 – ₹9 LPA (may vary with experience)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Hiring Process</h3>
+        <ol class="info-list">
+          <li>Online Coding Assessment</li>
+          <li>Technical Interview (RPA + Programming)</li>
+          <li>Managerial/HR Round</li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <h3>Why Join UiPath?</h3>
+        <ul class="perks-list">
+          <li>Work with cutting-edge RPA technology</li>
+          <li>Collaborative and diverse work culture</li>
+          <li>Flexible working hours & remote opportunities</li>
+          <li>Training, certification sponsorships, and fast growth paths</li>
+        </ul>
+      </div>
+
+      
+    </div>
+    <footer style="background-color: #0a1a54; color: white; padding: 40px 20px 0;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+      
+          
+          <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+            <h3 style="color: orange;">Connect With Us</h3>
+            <div style="font-size: 24px; margin: 10px 0;">
+              <a href="#" style="margin-right: 10px; color: white;"><i class="fab fa-facebook"></i></a>
+              <a href="#" style="margin-right: 10px; color: white;"><i class="fab fa-instagram"></i></a>
+              <a href="#" style="margin-right: 10px; color: white;"><i class="fab fa-linkedin"></i></a>
+              <a href="#" style="margin-right: 10px; color: white;"><i class="fas fa-envelope"></i></a>
+            </div>
+            <h3 style="color: orange;">SRINIET ZONE</h3>
+            <ul style="list-style: none; padding-left: 0;">
+              <li>❯ Exam Results</li>
+              <li>❯ Online Test's</li>
+              <li>❯ Placement Blog</li>
+              <li>❯ Transport</li>
+              <li>❯ Committees</li>
+            </ul>
+          </div>
+      
+          
+          <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+            <h3 style="color: orange;">Information For</h3>
+            <ul style="list-style: none; padding-left: 0;">
+              <li>❯ BCAT Admissions</li>
+              <li>❯ NAAC SSR</li>
+              <li>❯ IQAC</li>
+              <li>❯ Anti Ragging</li>
+              <li>❯ Best Practices</li>
+            </ul>
+          </div>
+      
+          
+          <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+            <h3 style="color: orange;">Quick Links</h3>
+            <ul style="list-style: none; padding-left: 0;">
+              <li>❯ Admissions Enquiry</li>
+              <li>❯ Payment</li>
+              <li>❯ Feedback Form</li>
+              <li>❯ AICTE Feedback</li>
+              <li>❯ Faculty Recruitment Applications</li>
+            </ul>
+          </div>
+        </div>
+      
+        
+        <div style="background-color: #005670; text-align: center; color: white; padding: 10px; font-size: 14px;width: 100%;">
+          ©copyRight 2025 Srinivasa institutions | Developed By <span style="color: lightblue;">Digital JP.</span> All Rights Reserved
+        </div>
+      </footer>
+</main>
+
+</body>      

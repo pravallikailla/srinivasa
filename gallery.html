@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Srinivasa College</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #003366, #004080);
+      color: white;
+      padding: 44px 4px; 
+      text-align: center;
+      border-bottom: 8px solid #003366;
+      display: flex;
+      align-items: center;
+      gap: 90px;
+    }
+
+    header .logo {
+      max-width: 400px;  
+      height: 100px;
+    }
+
+    header h1 {
+      font-size: 56px; 
+      margin-bottom: 8px; 
+      text-transform: uppercase;
+      font-weight: bold;
+      flex-grow: 1;
+    }
+
+    header p {
+      font-size: 21px; 
+      max-width: 800px;
+      margin: auto;
+      font-style: italic;
+    }
+
+    .gallery-container {
+      max-width: 1300px;
+      margin: 64px auto; 
+      padding: 0 16px; 
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-container .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .gallery-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery-container .caption {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 0 0 12px 12px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-container .gallery-item:hover .caption {
+      opacity: 1;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 32px 16px; 
+      margin-top: 96px;
+      border-top: 8px solid #004080;
+    }
+
+    footer p {
+      font-size: 16px; 
+      font-weight: 300;
+    }
+    @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 16px;
+    gap: 20px;
+  }
+
+  header .logo {
+    max-width: 80%;
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    padding: 0 10px;
+  }
+
+  .gallery-container .caption {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  footer {
+    padding: 24px 10px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <header onclick="gclose()">
+    <img src="Srinit_Updated_logo_brown-1 (1).png" alt="Srinivasa College Logo" class="logo"> 
+    <div>
+      <h1>Gallery</h1>
+      <p>Explore life at Srinivasa Institute of Engineering and Technology — from vibrant campus views to exciting student events.</p>
+    </div>
+  </header>
+
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="g18.jpg" alt="Gallery Image 1">
+      <div class="caption">Campus View - Morning</div>
+    </div>
+    <div class="gallery-item">
+      <img src="event4.jpg" alt="Gallery Image 2">
+      <div class="caption">Sports Day- 2024</div>
+    </div>
+    <div class="gallery-item">
+      <img src="event3.jpg" alt="Gallery Image 3">
+      <div class="caption">Gandi Jayanthi</div>
+    </div>
+    <div class="gallery-item">
+      <img src="g15.jpg" alt="Gallery Image 4">
+      <div class="caption">Project Expo</div>
+    </div>
+    <div class="gallery-item">
+      <img src="g14.jpg" alt="Gallery Image 5">
+      <div class="caption">Engineering Workshop</div>
+    </div>
+    <div class="gallery-item">
+      <img src="event2.jpg" alt="Gallery Image 6">
+      <div class="caption">Graduation Day 2023</div>
+    </div>
+    <div class="gallery-item">
+      <img src="event5.jpg" alt="Gallery Image 7">
+      <div class="caption">International Womens Day-2024</div>
+    </div>
+    <div class="gallery-item">
+      <img src="g4.jpg" alt="Gallery Image 8">
+      <div class="caption">Srinivasa Institute - Evening View</div>
+    </div>
+    <div class="gallery-item">
+      <img src="g5.jpg" alt="Gallery Image 9">
+      <div class="caption">Student Club Meeting</div>
+    </div>
+    <div class="gallery-item">
+      <img src="g12.jpg" alt="Gallery Image 10">
+      <div class="caption">Yoga Day</div>
+    </div>
+    <div class="gallery-item">
+      <img src="g11.jpg" alt="Gallery Image 11">
+      <div class="caption">Pongal Celebrations</div>
+    </div>
+    <div class="gallery-item">
+      <img src="g9.jpg" alt="Gallery Image 12">
+      <div class="caption">Sports ground</div>
+    </div>
+    <div class="gallery-item">
+      <img src="apn.JPG" alt="Gallery Image 13">
+      <div class="caption">Temple View</div>
+    </div>
+    <div class="gallery-item">
+      <img src="APJ 1.jpeg" alt="Gallery Image 14">
+      <div class="caption">Dr. APJ Memorial Lecture</div>
+    </div>
+    <div class="gallery-item">
+      <img src="g6.jpg" alt="Gallery Image 15">
+      <div class="caption"> NCC Camp 2024</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Srinivasa Institute of Engineering and Technology. All rights reserved.</p>
+  </footer>
+  <script>
+    function gclose()
+    {
+        localStorage.setItem("gopen","false")
+        window.location.href="index.html"
+    }
+  </script>
+
+</body>
+</html>

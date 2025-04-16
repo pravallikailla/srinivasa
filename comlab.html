@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    * {
+      padding: 0px;
+      margin: 0px;
+      outline: 0px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      color: #333;
+      height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #02457a;
+      color: white;
+      padding: 30px 20px;
+      height: 10vh;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    .image {
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hide {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 5px 13px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+      margin-top: 20vh;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      border-left: 6px solid #02457a;
+      padding-left: 10px;
+      color: #02457a;
+      font-size: 24px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+    }
+
+    .contact p {
+      margin: 5px 0;
+    }
+
+    footer {
+      background-color: #02457a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .banner {
+      display: flex;
+      gap: 120px;
+      align-items: center;
+    }
+
+    .banner h1 {
+      font-size: 44px;
+    }
+    @media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  header img {
+    width: 100px;
+    height: auto;
+  }
+
+  .container {
+    padding: 10px;
+    margin-top: 25vh;
+  }
+
+  .hide {
+    font-size: 28px;
+    top: 50%;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img {
+    max-width: 90%;
+  }
+
+  table, th, td {
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+}
+
+    </style>
+</head>
+<body>
+    
+    <header class="banner">
+        <img src="Srinit_Updated_logo_brown-1.png" style="width:140px;height: 100px;" alt="">
+        <h1>Srinivasa Institute of Engineering and Technology</h1>
+        <!-- <p><strong>Laboratories</strong></p> -->
+      </header>
+<div class="container">
+    <section>
+      <h2>About Computer Facilities</h2>
+      <p>
+        The Department of Computer Science and Information Technology at Srinivasa Institute of Engineering and Technology is supported by cutting-edge computer facilities. These facilities are designed to provide students, researchers, and faculty with access to advanced computing resources and a dynamic learning environment.
+      </p>
+      <p>
+        The computing environment ensures students are industry-ready by familiarizing them with the latest technologies, programming languages, and real-time project development platforms.
+      </p>
+    </section>
+  
+    <section>
+      <h2>Lab Infrastructure</h2>
+      <ul>
+        <li>Over 200 computers with high-performance Intel i5/i7 processors</li>
+        <li>Fully air-conditioned labs with 24/7 power backup</li>
+        <li>High-speed fiber-optic internet connectivity (100 Mbps)</li>
+        <li>Centralized printer and scanning facilities</li>
+        <li>Biometric access and CCTV surveillance for lab security</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Software Availability</h2>
+      <ul>
+        <li>Microsoft Azure & Microsoft Imagine Suite</li>
+        <li>AutoCAD, MATLAB, Oracle, and Cisco Packet Tracer</li>
+        <li>IDE support: PyCharm, VS Code, Eclipse, NetBeans</li>
+        <li>Linux (Ubuntu), Windows 10, and virtual machine environments</li>
+        <li>In-house servers for deploying student projects</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Operating Hours</h2>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Timing</th>
+        </tr>
+        <tr>
+          <td>Monday to Friday</td>
+          <td>8:30 AM – 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>9:00 AM – 1:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sunday & Holidays</td>
+          <td>Closed</td>
+        </tr>
+      </table>
+    </section>
+  
+    <section>
+      <h2>Usage Guidelines</h2>
+      <ul>
+        <li>Use only allotted systems; sharing is not permitted without permission.</li>
+        <li>Students must log all sessions with time and purpose.</li>
+        <li>Keep your workspace clean and report any damage immediately.</li>
+        <li>Access to external devices (USB, HDD) is restricted and monitored.</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Student Support Services</h2>
+      <ul>
+        <li>Hands-on training sessions and workshops</li>
+        <li>24/7 access to virtual lab environments for coding practice</li>
+        <li>Technical clubs for AI, Web Development, and Ethical Hacking</li>
+        <li>Dedicated faculty mentors for project guidance</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Achievements & Events</h2>
+      <ul>
+        <li>Annual Hackathon hosted on campus with 100+ participants</li>
+        <li>Winners of Smart India Hackathon – 2024</li>
+        <li>Collaborative projects with companies like Infosys, TCS, and IBM</li>
+        <li>Published over 30 student-led research papers in international journals</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="com1.jpg" alt="Computer Lab 1">
+        <img src="com2.jpg" alt="Computer Lab 2">
+        <img src="com3.jpg" alt="Computer Lab 3">
+        
+      </div>
+    </section>
+  
+    <section class="contact">
+      <h2>Contact Information</h2>
+      <p><strong>Computer Lab In-Charge:</strong> Ms. Srilakshmi</p>
+      <p><strong>Email:</strong> compfacilities@srinivasacollege.ac.in</p>
+      <p><strong>Phone:</strong> +91-8899763234</p>
+    </section>
+  </div>
+  
+  <footer>
+    &copy; 2025 Srinivasa Institute of Engineering and Technology. All rights reserved.
+  </footer>
+  
+</body>
+</html>

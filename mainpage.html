@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Charm:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Adlam:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            outline: none;
+        }
+        .con{
+            width:100%;
+            height:100vh;
+            background-color: rgb(6, 6, 57);
+        }
+        
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+   
+    color:white;
+    position: relative;
+    top:-30px;
+
+}
+
+
+nav div:first-child {
+    flex: 9;
+    /* text-align: left; */
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.clg {
+    flex: 49;
+    text-align: center;
+    font-size: 50px;
+    
+  font-family:"charm",cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #081c3d;
+    font-size: 16px;
+    font-family: poppins;
+    
+}
+
+.top-nav a {
+    color: #1eb5ff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    
+}
+
+.top-nav .buttons button {
+    background-color: #1eb5ff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.top-nav .buttons button:hover {
+    background-color: #1b6fbd;
+}
+.buttons button{
+    font-family: poppins;
+    font-size: 12px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c1b33; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    font-size: 22px;
+    color: #36a9e1;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #36a9e1;
+}
+
+td {
+    padding: 8px 15px;
+    text-align: left;
+    font-family: big shoulders;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+a {
+    color: #f3c640;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+td:hover{
+    color:#cc9900
+}
+.table2{
+    margin-top: 80px;
+}
+input{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:lightblue;
+    border: none;
+   margin: 5px;
+    height:30px;
+    padding: 6px;
+    
+}
+input::placeholder{
+font-size: 14px;
+color:#0c1b33
+}
+.modal{
+    display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgb(1, 162, 255);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+}
+#cross
+{
+    background-color: rgb(202, 0, 0);
+    font-size: 20px;
+}
+.left:hover{
+    color:#ffbf00
+}
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <nav>
+            <div class="left"><i class="fa-solid fa-xmark" onclick="closemenu()"></i>Main</div>
+            <div class="clg">Srinivasa Collage Of Engineering</div>
+        </nav>
+        <div class="top-nav">
+            <a href="#">Employers</a>
+            <a href="#">Parents & Families</a>
+            <a href="#">Placements</a>
+            <a href="#">Work at Srinivasa</a>
+            <a href="#">myCharger</a>
+
+            <div class="modal" id="applymodal">
+                
+                <h2 style="color: #081c3d;">Apply Now</h2>
+                <form>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Course Name" required>
+                    <button style="margin-right: 5px; height:35px;border: none; background-color: lightblue;padding: 8px; border-radius: 5px;" type="submit">Submit Application</button><i class="fa-solid fa-xmark" id="cross" onclick="closebtn()"></i>
+                </form>
+            </div>
+
+            <div class="buttons">
+                <button onclick="openbtn()">Apply</button>
+                <button>Request Info</button>
+                <button>Give</button>
+                <button>Directory</button>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Academics</th>
+                <th>Student Life</th>
+                <th>About</th>
+                <th>Admissions</th>
+            </tr>
+            <tr>
+                <td>Academics at College</td>
+                <td>Student Life Overview</td>
+                <td>About the University</td>
+                <td>Office of Admissions</td>
+            </tr>
+            <tr>
+                <td>Programs A-Z</td>
+                <td>Get Involved!</td>
+                <td>Accreditation</td>
+                <td>Apply</td>
+            </tr>
+            <tr>
+                <td>College of engineering</td>
+                <td>Career Development</td>
+                <td>Facts & Figures</td>
+                <td>Request Information</td>
+            </tr>
+            <tr>
+                <td>R&D Sell</td>
+                <td>Safety & Security</td>
+                <td>Awards & Affiliations</td>
+                <td>Undergraduate Admissions</td>
+            </tr>
+            <tr>
+                <td>Campus Life</td>
+                <td>Accessibility</td>
+                <td>University Leadership</td>
+                <td>Graduate Admissions</td>
+            </tr>
+            <tr>
+                <td>Exam Cell</td>
+                <td>Health & Wellness</td>
+                <td>Board of Governors</td>
+                <td>International Students</td>
+            </tr>
+            <tr>
+                <td>School of Health Sciences</td>
+                <td>Living on Campus</td>
+                <td>Offices & Departments</td>
+                <td>Online Programs</td>
+            </tr>
+            <tr>
+                <td>Library</td>
+                <td>Dining</td>
+                <td>Campus Locations & Maps</td>
+                <td>Tuition & Financial Aid</td>
+            </tr>
+            <tr>
+                <td>Academic Calendar and Course Schedules</td>
+                <td>Graduate & International Students</td>
+                <td>State-of-the-Art Facilities</td>
+                <td>Net Price Calculator</td>
+            </tr>
+            <tr>
+                <td>Course Catalog</td>
+                <td>Commencement</td>
+                <td>Employment</td>
+                <td>Pre-College and Summer Youth Programs</td>
+            </tr>
+            <tr>
+                <td><a href="#">+ See More</a></td>
+                <td><a href="#">+ See More</a></td>
+                <td><a href="#">+ See More</a></td>
+                <td><a href="#">+ See More</a></td>
+            </tr>
+        </table>
+        <div class="table2">
+        <table>
+            <tr>
+                <th>Inclusion</th>
+                <th>Alumni & Friends</th>
+                <th>Research</th>
+                <th>Explore</th>
+            </tr>
+            <tr>
+                <td>Inclusive Excellence Division</td>
+                <td>Our Alumni</td>
+                <td>Research Overview</td>
+                <td>Explore the University</td>
+            </tr>
+            <tr>
+                <td>Accessibility Resources Center</td>
+                <td>Alumni Events</td>
+                <td>Labs & Groups</td>
+                <td>West Haven & Beyond</td>
+            </tr>
+            <tr>
+                <td>Inclusion, Diversity, Equity, and Access (IDEA) Council</td>
+                <td>Alumni Involvement</td>
+                <td>Faculty Research</td>
+                <td>News and Media</td>
+            </tr>
+            <tr>
+                <td>Myatt Center for Diversity and Inclusion</td>
+                <td>Alumni Benefits</td>
+                <td>Student Fellowships & Research</td>
+                <td>Events</td>
+            </tr>
+            <tr>
+                <td>Spiritual Life and Campus Ministry</td>
+                <td>Alumni Magazine</td>
+                <td>Summer Undergraduate Research Fellowships (SURF)</td>
+                <td>Camps and Conferences</td>
+            </tr>
+            <tr>
+                <td>Title IX</td>
+                <td>Alumni Association</td>
+                <td>Grants & Sponsored Programs</td>
+                <td>Digital Downloads</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Contact Alumni Relations</td>
+                <td></td>
+                <td>Community Spotlights</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Support the University</td>
+                <td></td>
+                <td>The Arts on Campus</td>
+            </tr>
+        </table>
+    </div>
+
+    
+
+    </div>
+    <script>
+//for apply button
+        let btn=document.getElementById("applymodal")
+        function openbtn(){
+            btn.style.display = "block";
+
+        }
+        function  closebtn(){
+            btn.style.display = "none";
+        }
+  
+//for main button
+
+
+        function closemenu() {
+            localStorage.setItem("menuOpen", "false"); 
+            window.location= "index.html";
+        }
+
+
+    </script>
+</body>
+</html>

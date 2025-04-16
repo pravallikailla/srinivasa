@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Majors & Programs - Srinivasa College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Charm:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Adlam:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      height: 300vh;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .search-section1 {
+      background-color: #ffffff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .search-section1 input {
+      width: 60%;
+      max-width: 500px;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .container1 {
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .program-grid1 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .program-card1 {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .program-card1:hover {
+      transform: translateY(-5px);
+    }
+
+    .program-title1 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 0.5rem;
+    }
+
+    .program-desc1 {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .foot{
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      
+    }
+    .intro {
+      padding: 4rem 2rem;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .intro h2 {
+      font-size: 2rem;
+      color: #003366;
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .program-section {
+      padding: 4rem 2rem;
+      background-color: #f4f4f4;
+    }
+
+    .program-section h2 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .program-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .column {
+      flex:1;
+      min-width: 300px;
+    }
+
+    .column h3 {
+      color: #004080;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .column li {
+      margin-bottom: 0.8rem;
+    }
+
+    .column a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .column a:hover {
+      color: #001f4d;
+    }
+
+    .cards-section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h4 {
+      color: #003366;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .highlight3 {
+      background-color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .highlight3 h2 {
+      font-size: 2rem;
+      color: #003366;
+      margin-bottom: 1rem;
+    }
+
+    .highlight3 p {
+      font-size: 1.05rem;
+      max-width: 800px;
+      margin: auto;
+      color: #444;
+    }
+    footer {
+            width: 100%;
+            height: 50vh;
+            background-color: #0e1a54;
+        }
+
+        .last {
+            margin-left: 90px;
+            margin-right: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 30px;
+            padding-top: 30px;
+        }
+
+        .f1,
+        .f2,
+        .f3,
+        .f4 {
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+            width: 230px;
+            border-bottom: 1px dotted white;
+        }
+
+        .f1 h2 {
+            color: rgb(247, 171, 39);
+            width: 230px;
+
+        }
+
+        .f2 h2 {
+            color: rgb(247, 171, 0)
+        }
+
+        .f3 h2 {
+            color: rgb(247, 171, 0)
+        }
+
+        .f4 h2 {
+            color: rgb(247, 171, 0)
+        }
+
+        .fa-angles-right {
+            color: silver;
+            font-size: 17px;
+
+
+        }
+
+        .last div {
+            font-family: Kanit, sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 20px;
+            color: white
+        }
+
+        .foot {
+            background-color: #1f6b97;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 19px;
+            color: rgb(0, 0, 0)
+        }
+
+        .face1 {
+            display: flex;
+            gap: 20px;
+            font-size: 190px;
+            color: aliceblue
+        }
+
+        .face1:hover {
+            color: brown;
+        }
+
+        #d1:hover {
+            transform: scale(1.2);
+            border-radius: 15px;
+        }
+
+        #d2:hover {
+            transform: scale(1.2);
+            border-radius: 15px;
+        }
+
+        #d3:hover {
+            transform: scale(1.2);
+            border-radius: 15px;
+        }
+
+        .left1:hover {
+            color: #ef9c0e
+        }
+
+        .right:hover {
+            color: #ef9c0e;
+        }
+        .f1 div:hover {
+    color: rgb(255, 119, 0);
+}
+.f2 div:hover {
+    color: rgb(255, 119, 0);
+}
+.f3 div:hover {
+    color: rgb(255, 119, 0);
+}
+.bapply:hover {
+    background-color: #740505;  
+    color: white;
+    transform: scale(1.1); 
+    transition: 0.3s ease-in-out;
+}
+.brequest:hover {
+    background-color: #d08a00;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.bexplore:hover {
+    background-color: #dc970c;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.cheader{
+    display: flex;
+    /* justify-content: space-between; */
+    gap:740px;
+    align-items: center;
+}
+    
+  </style>
+</head>
+<body>
+
+  <header onclick="hclose()">
+    <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 110px;">
+      <img src="Srinit_Updated_logo_brown-1 (1).png" alt="College Logo" style="height: 110px; width:auto;">
+      <div>
+        <h1>All Majors & Programs</h1>
+        <p>Discover the wide range of undergraduate and postgraduate programs offered at Srinivasa Institute of Engineering and Technology.</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-section1">
+    <input type="text" placeholder="Search by program name... (e.g., Computer Science)">
+  </div>
+  <div class="intro">
+    <h2>Shaping the Innovators of Tomorrow</h2>
+    <p>At Srinivasa College, we are dedicated to fostering academic brilliance and professional excellence. With a strong foundation in engineering education, our programs empower students to lead, create, and inspire in a rapidly evolving world.</p>
+  </div>
+
+  <div class="container1">
+    <div class="program-grid1">
+      <div class="program-card1">
+        <div class="program-title1">Computer Science & Engineering</div>
+        <div class="program-desc1">Explore programming, AI, data structures, and software development.</div>
+      </div>
+      <div class="program-card1">
+        <div class="program-title1">Artificial Intelligence & Data Science</div>
+        <div class="program-desc1">Dive into data analytics, machine learning, and real-world AI solutions.</div>
+      </div>
+      <div class="program-card1">
+        <div class="program-title1">Electronics and Communication</div>
+        <div class="program-desc1">Learn about signals, circuits, embedded systems, and more.</div>
+      </div>
+      <div class="program-card1">
+        <div class="program-title1">Mechanical Engineering</div>
+        <div class="program-desc1">Design machines, analyze thermal systems, and study materials.</div>
+      </div>
+      <div class="program-card1">
+        <div class="program-title1">Civil Engineering</div>
+        <div class="program-desc1">Plan and construct sustainable infrastructure and urban projects.</div>
+      </div>
+      <div class="program-card1">
+        <div class="program-title1">Information Technology</div>
+        <div class="program-desc1">Master web development, database systems, and cloud computing.</div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <section class="program-section">
+    <h2>Programs Offered</h2>
+    <div class="program-columns">
+      <div class="column" style="flex:8 ;font-size: 20px;">
+        <h3>Undergraduate Programs</h3>
+        <ul>
+          <li><a href="#">Computer Science & Engineering</a></li>
+          <li><a href="#">Artificial Intelligence & Data Science</a></li>
+          <li><a href="#">Electronics & Communication Engineering</a></li>
+          <li><a href="#">Electrical & Electronics Engineering</a></li>
+          <li><a href="#">Mechanical Engineering</a></li>
+          <li><a href="#">Civil Engineering</a></li>
+          <li><a href="#">Information Technology</a></li>
+        </ul>
+      </div>
+      <div class="column" style="flex:5;font-size: 20px;">
+        <h3>Specialized Initiatives</h3>
+        <ul>
+          <li><a href="#">Entrepreneurship Development Cell</a></li>
+          <li><a href="#">Innovation & Incubation Center</a></li>
+          <li><a href="#">Industry Interface Program</a></li>
+          <li><a href="#">Higher Studies & Guidance Cell</a></li>
+          <li><a href="#">Soft Skills & Placement Training</a></li>
+          <li><a href="#">Internship & Research Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards-section">
+    <div class="card-grid">
+      <div class="card">
+        <h4>Top-Notch Infrastructure</h4>
+        <p>Modern labs, smart classrooms, and high-speed internet ensure students learn in a future-ready environment.</p>
+      </div>
+      <div class="card">
+        <h4>Expert Faculty</h4>
+        <p>Our educators are experienced professionals and researchers committed to mentoring the next generation.</p>
+      </div>
+      <div class="card">
+        <h4>Industry Collaboration</h4>
+        <p>Programs are curated in alignment with TCS, AWS, and Deloitte to ensure career relevance.</p>
+      </div>
+      <div class="card">
+        <h4>100% Placement Assistance</h4>
+        <p>From mock interviews to real-world internships, we prepare students for top tech companies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlight3">
+    <h2>Why Choose Srinivasa?</h2>
+    <p>We don't just educate — we inspire. Join a community that values innovation, collaboration, and excellence. With dedicated centers for research, entrepreneurship, and industry linkages, we shape well-rounded professionals who are job-ready and future-driven.</p>
+  </section>
+  <footer>
+    <div class="last">
+        <div class="f1">
+            <h2 style="padding-bottom: 10px;font-size: 20px;">Connect With Us</h2>
+            <div class="face1"><i class="fa-brands fa-square-facebook"></i><i
+                    class="fa-brands fa-instagram"></i><i class="fa-brands fa-invision"></i><i
+                    class="fa-brands fa-square-x-twitter"></i></div>
+            <h2>SRINIET ZONE</h2>
+            <div><i class="fa-solid fa-angles-right"></i>Exam Results</div>
+            <div><i class="fa-solid fa-angles-right"></i>Online Test's</div>
+            <div><i class="fa-solid fa-angles-right"></i>Placement Blog </div>
+            <div><i class="fa-solid fa-angles-right"></i>Transport</div>
+            <div><i class="fa-solid fa-angles-right"></i>Comittees</div>
+        </div>
+        <div class="f2">
+            <h2>Information For</h2>
+            <div><i class="fa-solid fa-angles-right"></i>BCAT Admissions</div>
+            <div><i class="fa-solid fa-angles-right"></i>NAAC SSR</div>
+            <div><i class="fa-solid fa-angles-right"></i>IQAC </div>
+            <div><i class="fa-solid fa-angles-right"></i>Anti Ragging</div>
+            <div><i class="fa-solid fa-angles-right"></i>Best Practices</div>
+        </div>
+        <div class="f3">
+            <h2>Quick Links</h2>
+            <div><i class="fa-solid fa-angles-right"></i>Admissions Enquiry</div>
+            <div><i class="fa-solid fa-angles-right"></i>Payment</div>
+            <div><i class="fa-solid fa-angles-right"></i>Feedback Form</div>
+            <div><i class="fa-solid fa-angles-right"></i>AICTE Feedback</div>
+            <div><i class="fa-solid fa-angles-right"></i>Faculty Recruitment Applications</div>
+        </div>
+    </div>
+    </footer>
+
+  <div class="foot">
+    &copy; 2025 Srinivasa Institute of Engineering and Technology. All rights reserved.
+</div>
+<script>
+    function hclose()
+    {
+        localStorage.setItem("hclose","false")
+        window.location.href="index.html"
+    }
+</script>
+</body>
+</html>

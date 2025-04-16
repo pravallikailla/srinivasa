@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Deloitte - Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+    }
+
+    nav {
+      width: 100%;
+      color: darkblue;
+      height: 19vh;
+      display: flex;
+      align-items: center;
+      background-color: rgba(174, 196, 229, 0.763);
+    }
+
+    .reight {
+      display: flex;
+      gap: 90px;
+      font-size: 28px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 400;
+      position: absolute;
+      right: 0;
+      border-bottom: 2px dotted;
+      margin-right: 15px;
+    }
+
+    .section {
+      background: #fff;
+      margin-bottom: 30px;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .section h3 {
+      color: #e65100;
+      margin-bottom: 10px;
+    }
+
+    .info-list, .perks-list {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .perks-list li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      color: #d84315;
+      font-weight: bold;
+    }
+
+    li, .details-box {
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      gap:9px;
+      
+    }
+
+    h2 {
+      color: #0a1a54;
+      font-size: 38px;
+    }
+    @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .reight {
+    flex-direction: column;
+    gap: 10px;
+    position: static;
+    margin-top: 10px;
+    font-size: 22px;
+  }
+
+  .log img {
+    max-width: 140px;
+    height: auto;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about h2 {
+    font-size: 26px;
+  }
+
+  .about img {
+    width: 150px;
+    height: auto;
+  }
+
+  .details-box {
+    padding: 10px;
+  }
+
+  li {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  footer div {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  footer ul {
+    padding-left: 0;
+  }
+
+  footer li {
+    font-size: 16px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <main class="main-content">
+    <nav>
+      <div class="log"><img src="Srinit_Updated_logo_brown-1 (1).png" alt=""></div>
+      <div class="reight">
+        <div>Home</div>
+        <div>About</div>
+      </div>
+    </nav>
+
+    <div class="details-box">
+      <div class="about">
+        <h2>ABOUT</h2>
+        <img src="cm3.png" style="width: 200px;height: 80px;" alt="Deloitte Logo">
+      </div>
+
+      <div class="section">
+        <h3>Deloitte Overview</h3>
+        <p>
+          <span class="highlight">Deloitte</span> is one of the "Big Four" professional services firms, offering services in audit, consulting, financial advisory, risk management, and tax. Deloitte operates in over 150 countries and is known for innovation and leadership across industries.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Technologies Used</h3>
+        <ul class="info-list">
+          <li>Cloud Platforms (AWS, Azure, GCP)</li>
+          <li>Data Analytics and AI/ML</li>
+          <li>ERP Solutions (SAP, Oracle)</li>
+          <li>Cybersecurity Tools</li>
+          <li>Consulting Frameworks and Agile Tools</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Hiring Details</h3>
+        <ul class="info-list">
+          <li><strong>Roles:</strong> Analyst, Consultant, Risk Advisor, Software Engineer</li>
+          <li><strong>Eligibility:</strong> 60%+, strong analytical and communication skills</li>
+          <li><strong>Preferred Skills:</strong> Problem solving, SQL, Python, Excel, PPT</li>
+          <li><strong>Locations:</strong> Hyderabad, Bengaluru, Gurgaon, Mumbai</li>
+          <li><strong>CTC Offered:</strong> ₹6 – ₹12 LPA</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Hiring Process</h3>
+        <ol class="info-list">
+          <li>Aptitude + Technical MCQ Round</li>
+          <li>Technical Interview (domain + case-based)</li>
+          <li>HR Interview</li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <h3>Why Join Deloitte?</h3>
+        <ul class="perks-list">
+          <li>Global exposure with high-impact projects</li>
+          <li>Leadership development and mentorship</li>
+          <li>Inclusive, collaborative work culture</li>
+          <li>Continuous learning through Deloitte University</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer style="background-color: #0a1a54; color: white; padding: 40px 20px 0;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+          <h3 style="color: orange;">Connect With Us</h3>
+          <div style="font-size: 24px; margin: 10px 0;">
+            <a href="#" style="margin-right: 10px; color: white;"><i class="fab fa-facebook"></i></a>
+            <a href="#" style="margin-right: 10px; color: white;"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="margin-right: 10px; color: white;"><i class="fab fa-linkedin"></i></a>
+            <a href="#" style="margin-right: 10px; color: white;"><i class="fas fa-envelope"></i></a>
+          </div>
+          <h3 style="color: orange;">SRINIET ZONE</h3>
+          <ul style="list-style: none; padding-left: 0;">
+            <li>❯ Exam Results</li>
+            <li>❯ Online Test's</li>
+            <li>❯ Placement Blog</li>
+            <li>❯ Transport</li>
+            <li>❯ Committees</li>
+          </ul>
+        </div>
+
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+          <h3 style="color: orange;">Information For</h3>
+          <ul style="list-style: none; padding-left: 0;">
+            <li>❯ BCAT Admissions</li>
+            <li>❯ NAAC SSR</li>
+            <li>❯ IQAC</li>
+            <li>❯ Anti Ragging</li>
+            <li>❯ Best Practices</li>
+          </ul>
+        </div>
+
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+          <h3 style="color: orange;">Quick Links</h3>
+          <ul style="list-style: none; padding-left: 0;">
+            <li>❯ Admissions Enquiry</li>
+            <li>❯ Payment</li>
+            <li>❯ Feedback Form</li>
+            <li>❯ AICTE Feedback</li>
+            <li>❯ Faculty Recruitment Applications</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="background-color: #005670; text-align: center; color: white; padding: 10px; font-size: 14px; width: 100%;">
+        ©copyRight 2025 Srinivasa institutions | Developed By <span style="color: lightblue;">Digital JP.</span> All Rights Reserved
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
